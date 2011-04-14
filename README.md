@@ -7,12 +7,12 @@ for event handlers and state booleans ('var isOpen') all over the place.
 
 By extending Backbone.StatedView rathar then Backbone.View you gain `state` which 
 is the current state the view is in and `states` which is a hash that 
-described the state graph for this view. It is a hash of
+describes the state graph for this view. It is a hash of
 
     {
-        'event selector': {
-            'startState' : 'endState'
-            'startState2' : 'endState2'
+        'event selector': {                     // <-- The even trigger
+            'startState' : 'endState'           // <-- A transition this trigger can cause
+            'startState2' : 'endState2'         // <-- Another transition this trigger can cause
         },
         'event2 selector2': {
             'startState2' : 'endState2'
