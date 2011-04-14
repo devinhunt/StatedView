@@ -45,7 +45,6 @@
                 var key = event.data;
                 var stateMap = states[key];
                 var newState = stateMap[_this.state];
-                console.log(newState);
                 if(newState) {
                     _this.state = newState;
                     _this[newState](event);
