@@ -1,5 +1,5 @@
 statedview.js for backbone.js
-==========================
+=============================
 
 statedview.js adds a simple, event triggered state machine to Backbone.View. This
 allows relatively complex UI behavior to be easily modeled and modified without the need
