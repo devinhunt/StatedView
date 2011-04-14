@@ -10,7 +10,7 @@ is the current state the view is in and `states` which is a hash that
 describes the state graph for this view. It is a hash of
 
     {
-        'event selector': {                     // <-- The even trigger
+        'event selector': {                     // <-- The trigger event and selector to attach it to
             'startState' : 'endState'           // <-- A transition this trigger can cause
             'startState2' : 'endState2'         // <-- Another transition this trigger can cause
         },
