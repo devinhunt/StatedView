@@ -26,3 +26,7 @@ A trigger event - like `click .closeButton` for example - is captured
 automatically and the matched against its state map. If a match for the
 current state is found, the view is updated to the end state and a 
 method of the same name is called, allowing you to act of the transition. 
+
+## Current version
+
+... was written in a couple of hours. Only tested with jQuery 1.5 and the latest underscore.js / backbone.js. Feedback appreciated. 

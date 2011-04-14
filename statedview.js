@@ -38,7 +38,6 @@
     _.extend(Backbone.StatedView.prototype, Backbone.View.prototype, {
         delegateState: function(states) {
             if(! (states || (states = this.states))) return;
-            
             var _this = this;
             
             function stateDispatch(event) {
@@ -52,8 +51,7 @@
             }
             
             $(this.el).unbind();
-            var firstState = undefined;
-            
+                        
             for(var key in states) {
                 var match = key.match(eventSplitter);
                 var eventName = match[1];
